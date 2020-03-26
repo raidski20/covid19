@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Alex;
+    src: url(../../portfolio/fonts/Alex.ttf);
+}
+body {font-family: Alex;color: unset;}
+
+/* start of global */
+ul{list-style: none;padding-inline-start: 0;}
+/* end of global */
+
+/* start of navbar */
+.navbar{background-color: #141414;}
+.navbar-brand{color: #33e1ed;font-size: 30px;}
+.navbar-brand:hover{color: #fff;font-size: 30px;}
+.navbar-nav .nav-link {color: #33e1ed; margin: 0 0px;}
+.navbar-nav .nav-link{font-size: 16px; text-transform: uppercase;}
+.navbar-nav .nav-link:hover{color: #fff;font-weight: bold;}
+.navbar-nav .nav-link.active{color: #fff;border-bottom: 2px solid #fff; font-weight: bold;}
+
+@media (max-width: 992px){
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-link.active{border-bottom: none; margin: 0;}
+    .navbar-nav .nav-link:hover{border-bottom: none;}
+}
+
+.animated-icon2 {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon2 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {background: #33e1ed;}
+
+.animated-icon2 span:nth-child(1) {top: 0px;}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {top: 10px;}
+
+.animated-icon2 span:nth-child(4) {top: 20px;}
+
+.animated-icon2.open span:nth-child(1) {top: 11px; width: 0%; left: 50%;}
+
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {top: 11px; width: 0%; left: 50%;}
+/* end of navbar */
+
+/* start of header slider */
+.slider .carousel-inner .carousel-caption{bottom: 100px;}
+.slider .carousel-inner .carousel-caption h5{font-size: 30px;}
+.slider .carousel-inner .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+.carousel-indicators li{height: 8px;}
+.slider .carousel-item{
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.slider .carousel-one{background-image: url("../img/covid1.jpg");}
+.slider .carousel-two{background-image: url("../img/covid2.jpg");}
+.slider .carousel-three{background-image: url("../img/covid3.jpg");}
+/* end of header slider */
+
+/* start of news section */
+.news{padding: 50px 0; background-color: #d3dde6;}
+.news h2{font-size: 30px; margin-bottom: 20px; color: #6c757c;}
+.news .card{margin-bottom: 20px;}
+.news .card-body {background: #faf8f0;}
+.news .card .card-title{color: #043353;}
+.news .card .card-text{color: #060606;}
+.news .card .card-link, .news .card-link:hover{color: #043353;}
+/* end of news section */
+
+/* start of statistics section */
+.statistics{padding: 40px 0;background-color: #043353;}
+.statistics h2{font-size: 30px;margin-bottom: 50px; color: #ddd;}
+.statistics .info p{margin-bottom: 40px;}
+.statistics .info:nth-child(1),.statistics .info:nth-child(4){color: #ddd;}
+.statistics .info:nth-child(2){color: #bc2c3d;}
+.statistics .info:nth-child(3){color: green;}
+@media(max-width: 992px){
+    .statistics h2{font-size: 25px;margin-bottom: 20px;}
+}
+.statistics h3{font-size: 24px;}
+/* .statistics p{margin-bottom: 40px;} */
+.statistics .card .card-body .card-title:nth-child(1){margin-bottom: .45rem;}
+.statistics .card .card-body .card-text:nth-child(1){margin-bottom: 10px;}
+.statistics .card .card-body .card-text:nth-child(1) span{font-size: 20px;}
+.statistics .card #firstS{color: #8080FF;}
+.statistics .card #secondS, .statistics .card #fourthS{color: red;}
+.statistics .card #thirdS{color: green;}
+/* end of statistics section */
