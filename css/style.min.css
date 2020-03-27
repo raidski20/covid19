@@ -1,6 +1,6 @@
 @font-face {
     font-family: Alex;
-    src: url(../../portfolio/fonts/Alex.ttf);
+    src: url(../fonts/Alex.ttf);
 }
 body {font-family: Alex;color: unset;}
 
