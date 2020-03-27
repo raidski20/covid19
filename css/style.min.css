@@ -122,6 +122,7 @@ ul{list-style: none;padding-inline-start: 0;}
 /* start of statistics section */
 .statistics{padding: 40px 0;background-color: #043353;}
 .statistics h2{font-size: 30px;margin-bottom: 50px; color: #ddd;}
+.statistics .info{text-align: center;}
 .statistics .info p{margin-bottom: 40px;}
 .statistics .info:nth-child(1),.statistics .info:nth-child(4){color: #ddd;}
 .statistics .info:nth-child(2){color: #bc2c3d;}
@@ -138,3 +139,21 @@ ul{list-style: none;padding-inline-start: 0;}
 .statistics .card #secondS, .statistics .card #fourthS{color: red;}
 .statistics .card #thirdS{color: green;}
 /* end of statistics section */
+
+/* start of about disease section */
+.about-disease{padding: 40px 0; background: #faf8f0;}
+.about-disease h5{font-size: 15px; color: #33e1ed;}
+.about-disease h4{color: #060606;}
+.about-disease p{margin-bottom: 0.4rem; letter-spacing: 1px;}
+.about-disease p:first-of-type{margin-bottom: 1rem;}
+.about-disease p:last-of-type{color: #043353; cursor: pointer;margin-bottom: 1rem;}
+.about-disease p:last-of-type:hover{text-decoration: underline;}
+.about-disease .card h4{font-size: 20px;}
+.about-disease .card p{cursor: none;margin-bottom: unset;color: #060606;}
+.about-disease .card p:hover{text-decoration: none;}
+.about-disease .spread h4{margin: 3rem 0 3rem 0;}
+.about-disease .spread .info{margin-bottom: 15px;}
+.about-disease .spread .info img{margin-bottom: 7px; padding: 15px; background-color: #fff;}
+.about-disease .spread .info p{cursor: none;margin-bottom: unset;color: #060606;}
+.about-disease .spread .info p:hover{text-decoration: none;}
+/* end of about disease section */

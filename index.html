@@ -191,20 +191,69 @@
                 </div>
             </div>
         </div>
-        <!-- end of statistics -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/chart.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            $('.navbar-nav .nav-link').click(function () {
-                $('.navbar-nav .nav-link').removeClass('active');
-                $(this).addClass('active');
-            }); $('.second-button').on('click', function () {
-                $('.animated-icon2').toggleClass('open');
-            });
-        </script>
+    </div>
+    <!-- end of statistics -->
+
+    <!-- start of about disease section -->
+    <div class="about-disease" id="about">
+        <div class="container">
+            <h5 class="text-uppercase text-center">about the disease</h5>
+            <h4 class="text-capitalize text-center">what is coronavirus?</h4>
+            <p>Coronaviruses (CoV) are a large family of viruses that
+                cause illness ranging from the common cold to more severe diseases.</p>
+
+            <p>Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome
+                coronavirus 2 (SARS-CoV-2). The disease was first identified in 2019 in Wuhan, the capital of Hubei,
+                China, and has since spread globally.</p>
+
+            <p data-toggle="collapse" data-target="#aboutVirus" aria-expanded="false" aria-controls="aboutVirus">Read
+                more</p>
+
+            <div class="collapse" id="aboutVirus">
+                <div class="card card-body">
+                    The World Health Organization (WHO) declared the 2019–20 coronavirus outbreak a Public Health
+                    Emergency of International Concern (PHEIC) on 30 January 2020 and a pandemic on 11 March
+                    2020.
+                </div>
+            </div>
+            <div class="spread">
+                <h4 class="text-capitalize text-center">how coronavirus spreads?</h4>
+                <div class="row">
+                    <div class="col-sm-6 text-center info">
+                        <img class="rounded-circle" src="img/g8378.png" alt="">
+                        <p class="text-capitalize">air by cough or sneeze</p>
+                    </div>
+                    <div class="col-sm-6 text-center info">
+                        <img class="rounded-circle" src="img/g8494.png" alt="">
+                        <p class="text-capitalize">personal contact</p>
+                    </div>
+                    <div class="col-sm-6 text-center info">
+                        <img class="rounded-circle" src="img/g8528.png" alt="">
+                        <p class="text-capitalize">contaminated objects</p>
+                    </div>
+                    <div class="col-sm-6 text-center info">
+                        <img class="rounded-circle" src="img/g8881.png" alt="">
+                        <p class="text-capitalize">animal contact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of about disease section -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.navbar-nav .nav-link').click(function () {
+            $('.navbar-nav .nav-link').removeClass('active');
+            $(this).addClass('active');
+        }); $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+        });
+    </script>
 </body>
 
 </html>
