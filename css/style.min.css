@@ -126,6 +126,8 @@ ul{list-style: none;padding-inline-start: 0;}
 /* start of statistics section */
 .statistics{padding: 40px 0;background-color: #043353;}
 .statistics h2{font-size: 30px;margin-bottom: 50px; color: #ddd;}
+.statistics .update{color: #fff;}
+.statistics .update p{font-size: 100px;}
 .statistics .info{text-align: center;}
 .statistics .info p{margin-bottom: 40px;}
 .statistics .info:nth-child(1),.statistics .info:nth-child(4){color: #ddd;}

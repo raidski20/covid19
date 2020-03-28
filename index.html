@@ -61,7 +61,7 @@
         <div class="container">
             <h2 class="text-uppercase text-center">latest updates about covid19</h2>
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-12 col-lg-4">
                     <div class="card"> <img src="img/news/news1jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text"><small class="text-muted">Last updated March 25, 2020</small></p>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-12 col-lg-4">
                     <div class="card"> <img src="img/news/news2.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text"><small class="text-muted">Last updated March 24, 2020</small></p>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-12 col-lg-4">
                     <div class="card"> <img src="img/news/news3.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text"><small class="text-muted">Last updated 27 minutes ago</small></p>
@@ -111,23 +111,20 @@
         <div class="container">
             <h2 class="text-uppercase text-center">Coronavirus disease outbreak situation</h2>
             <div class="row">
-                <div class="col-sm-6 col-lg-3 info">
-                    <h3>490,1444</h3>
+                <div class="col-sm-6 col-lg-4 info">
+                    <h3 id="total_cases"></h3>
                     <p>Confirmed cases</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 info">
-                    <h3>22,154</h3>
+                <div class="col-sm-6 col-lg-4 info">
+                    <h3 id="total_deaths"></h3>
                     <p>Confirmed deaths</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 info">
-                    <h3>118,060</h3>
-                    <p>Recovered deaths</p>
-                </div>
-                <div class="col-sm-6 col-lg-3 info">
-                    <h3>197</h3>
-                    <p>Countries with cases</p>
+                <div class="col-sm-6 col-lg-4 info">
+                    <h3 id="total_recovered"></h3>
+                    <p>Recovered cases</p>
                 </div>
             </div>
+            <p class="text-capitalize update" id="last_update"></p>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="card bg-light mb-3">
@@ -160,7 +157,7 @@
                                 <div class="col">
                                     <p class="card-text text-center"><span id="thirdS">121,198</span>
                                         <small>(84%)</small></p>
-                                    <p class="card-text text-center">Recovered / Discharged</p>
+                                    <p class="card-text text-center">Recovered</p>
                                 </div>
                                 <div class="col">
                                     <p class="card-text text-center"><span id="fourthS">22,311</span>

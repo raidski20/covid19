@@ -11,6 +11,27 @@ $(function () {
             scrollTop: $('#' + $(this).data('value')).offset().top
         }, 1000);
     });
+
+    // getting data about covid cases and didplay it
+    $.ajax({
+        url: 'https://corona.lmao.ninja/all',
+        dataType: 'json',
+        cache: false,
+        success: function (data, status) {
+            $.each(data, function(index) {
+                $("#total_cases").html(data.cases);
+                $("#total_deaths").html(data.deaths);
+                $("#total_recovered").html(data.recovered);
+                $("#last_update").html('last updated: ' + data.updated + ".");
+            })
+        },
+        error: function (xhr, textStatus, err) {
+            console.log(xhr);
+            console.log(textStatus);
+            console.log(err);
+        }
+
+    })
 })
 
 // start of corona virus animation
