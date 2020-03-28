@@ -13,6 +13,9 @@ ul{list-style: none;padding-inline-start: 0;}
 .navbar-brand{color: #33e1ed;font-size: 25px; margin-top: 5px;}
 .navbar-brand:hover{color: #fff;}
 .navbar-brand img{width: 30px;}
+@media (max-width: 238px){
+    .navbar-brand img{display: none;}
+}
 .navbar-nav .nav-link {color: #33e1ed; margin: 0 0px;}
 .navbar-nav .nav-link{font-size: 16px; text-transform: uppercase;}
 .navbar-nav .nav-link:hover{color: #fff;font-weight: bold;}
@@ -142,19 +145,19 @@ ul{list-style: none;padding-inline-start: 0;}
 /* end of statistics section */
 
 /* start of about disease section */
-.about-disease{padding: 40px 0; background: #faf8f0;}
+.about-disease{padding: 40px 0; background-image: url("../img/3599611.jpg");background-size: cover;background-attachment: fixed;}
 .about-disease h5{font-size: 15px; color: #33e1ed;}
-.about-disease h4{color: #060606;}
-.about-disease p{margin-bottom: 0.4rem; letter-spacing: 1px;}
+.about-disease h4{color: #fff;}
+.about-disease p{margin-bottom: 0.4rem; letter-spacing: 1px;color: #fff;}
 .about-disease p:first-of-type{margin-bottom: 1rem;}
-.about-disease p:last-of-type{color: #043353; cursor: pointer;margin-bottom: 1rem;}
+.about-disease p:last-of-type{color: #33e1ed; cursor: pointer;margin-bottom: 1rem;}
 .about-disease p:last-of-type:hover{text-decoration: underline;}
 .about-disease .card h4{font-size: 20px;}
-.about-disease .card p{cursor: none;margin-bottom: unset;color: #060606;}
+.about-disease .card p{cursor: none;margin-bottom: unset;}
 .about-disease .card p:hover{text-decoration: none;}
 .about-disease .spread h4{margin: 3rem 0 3rem 0;}
-.about-disease .spread .info{margin-bottom: 15px;}
+.about-disease .spread .info{margin-bottom: 30px;}
 .about-disease .spread .info img{margin-bottom: 7px; padding: 15px; background-color: #d3dde6;}
-.about-disease .spread .info p{cursor: none;margin-bottom: unset;color: #060606;}
+.about-disease .spread .info p{cursor: none;margin-bottom: unset; color: #fff;}
 .about-disease .spread .info p:hover{text-decoration: none;}
 /* end of about disease section */
