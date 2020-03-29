@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <!-- scroll to top button -->
+    <a id="scroll-Button"></a>
+    <!-- start of navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container"> <a class="navbar-brand text-uppercase" href="#"><img src="img/logo.png" alt="">
                 covid19</a>
@@ -25,11 +28,15 @@
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="news">news</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="statistics">statistics</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="about">about</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-value="symptoms">symptoms</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="prevention">prevention</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- end of navbar -->
+
+    <!-- start of slider -->
     <div class="slider">
         <div id="mainSlider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner text-uppercase">
@@ -57,6 +64,7 @@
             </ol>
         </div>
     </div>
+    <!-- end of slider -->
 
     <!-- start of news section -->
     <div id="news" class="news">
@@ -223,7 +231,7 @@
                         <p class="text-capitalize">air by cough or sneeze</p>
                     </div>
                     <div class="col-sm-6 text-center info">
-                        <img class="rounded-circle"  src="img/infection/g1662.png" alt="">
+                        <img class="rounded-circle" src="img/infection/g1662.png" alt="">
                         <p class="text-capitalize">human contact</p>
                     </div>
                     <div class="col-sm-6 text-center info">
@@ -241,7 +249,7 @@
     <!-- end of about disease section -->
 
     <!-- end start of symptoms section -->
-    <div class="symptoms">
+    <div class="symptoms" id="symptoms">
         <div class="container">
             <h5 class="text-center text-uppercase">basic symptoms</h5>
             <h4 class="text-center text-capitalize">coronavirus symptoms</h4>
@@ -321,19 +329,76 @@
 
                 <div class="info">
                     <h3>Avoid touching eyes, nose and mouth</h3>
-                    <p><strong>Why?</strong> Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</p>
+                    <p><strong>Why?</strong> Hands touch many surfaces and can pick up viruses. Once contaminated, hands
+                        can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body
+                        and can make you sick.</p>
                 </div>
 
                 <div class="info">
                     <h3>Practice respiratory hygiene</h3>
-                    <p>Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.</p>
-                    <p><strong>Why?</strong> Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.</p>
+                    <p>Make sure you, and the people around you, follow good respiratory hygiene. This means covering
+                        your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the
+                        used tissue immediately.</p>
+                    <p><strong>Why?</strong> Droplets spread virus. By following good respiratory hygiene you protect
+                        the people around you from viruses such as cold, flu and COVID-19.</p>
                 </div>
 
             </div>
         </div>
     </div>
     <!-- end of prevention section -->
+
+    <!-- start of footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 ">
+                    <div class="info">
+                        <h2 class="text-uppercase text">covid19</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="links text-capitalize">
+                        <h2>helpful links</h2>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li>images by:</li>
+                                    <li><a href="https://unsplash.com/@martinsanchez">Martin Sanchez</a></li>
+                                    <li><a href="https://www.freepik.com/free-photos-vectors/health">Health vector
+                                            created by freepik - www.freepik.com</a></li>
+                                    <li><a href="https://www.freepik.com/free-photos-vectors/health">Health photo
+                                            created by freepik - www.freepik.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer section -->
+
+    <!-- start of copyright section -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center text-sm-left text-uppercase">
+                    <p>copyright &copy; 2020</p>
+                </div>
+                <div class="col-sm-6 text-center text-sm-right">
+                    <ul class="icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

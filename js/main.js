@@ -12,6 +12,24 @@ $(function () {
         }, 1000);
     });
 
+    // start of scroll to top button
+    var btn = $('#scroll-Button');
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+        btn.addClass('show');
+    } 
+    else 
+    {
+        btn.removeClass('show');
+    }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+    // end of scroll to top button
+
     // getting data about covid cases and didplay it
     $.ajax({
         url: 'https://corona.lmao.ninja/all',

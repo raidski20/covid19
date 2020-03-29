@@ -177,7 +177,7 @@ ul{list-style: none;padding-inline-start: 0;}
 /* end of symptoms section */
 
 /* start of prevention section */
-.prevention{padding: 40px 0; background-color: #faf8f0;}
+.prevention{padding: 40px 0; background-color: #faf8f0; border-bottom: 1px solid #043353;}
 .prevention h2{font-size: 30px; margin-bottom: 20px; color: #6c757c;}
 .prevention p{margin-bottom: 1.5rem; line-height: 1.8em;}
 .prevention .icons{margin-top: 35px;}
@@ -188,3 +188,57 @@ ul{list-style: none;padding-inline-start: 0;}
 .prevention .advices .info h3::before{content: '\f00c';font-family: 'Font Awesome 5 Pro'; margin-right: 5px;color: green; font-size: 20px;}
 .prevention .icons p{color: #043353;}
 /* end of prevention section */
+
+/* start of footer */
+.footer{padding: 40px 0;background: #faf8f0;}
+.footer .info h2{font-size: 25px; color: #043353;}
+.footer .links h2{font-size: 25px;}
+.footer .info p,ul{color: #060606;}
+.footer .links ul a, .footer .links h2,.footer .links ul a:hover{color: #043353;}
+@media(max-width: 992px){
+    .footer .info p{margin-bottom: 15px;}
+}
+/* end of footer */
+
+/* start of copyright */
+.copyright{border-top: 1px solid #fff; background: #08526d; padding: 20px;}
+.copyright ul,p{margin: 0;}
+.copyright p{color: #fff;}
+.copyright ul li{display: inline-block; margin-left: 20px; font-size: 20px;}
+.copyright ul li a{color: #fff;}
+/* end of copyright */
+
+/* start of scroll to top button */
+#scroll-Button {
+    display: inline-block;
+    background-color: #33e1ed;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+    -moz-transition: background-color .3s, opacity .5s, visibility .5s;
+    -ms-transition: background-color .3s, opacity .5s, visibility .5s;
+    -o-transition: background-color .3s, opacity .5s, visibility .5s;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+#scroll-Button::after {content: "\f077";font-family: 'Font Awesome 5 Pro';font-size: 2em;line-height: 50px;color: #fff;}
+#scroll-Button:hover {cursor: pointer;background-color: #043353;}
+#scroll-Button.show {opacity: 1;visibility: visible;}
+/* end of scroll to top button */
+
+/* start of scrollbar */
+::-webkit-scrollbar {width: 13px;}  
+::-webkit-scrollbar-track {border-radius: 10px;}
+::-webkit-scrollbar-thumb { background: linear-gradient(to top, #043353, #33e1ed); border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+/* end of scrollbar style */
