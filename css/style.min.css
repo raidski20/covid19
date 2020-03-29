@@ -173,6 +173,7 @@ ul{list-style: none;padding-inline-start: 0;}
 .symptoms .info h4{margin-bottom: 1rem;}
 .symptoms .info p{line-height: 1.5em;font-size: 20px; color: #043353;}
 .symptoms .info ol li{font-size: 18px; margin-bottom: 5px;}
+.symptoms ol li::before{content: '\f00c';font-family: 'Font Awesome 5 Pro'; margin-right: 5px;color: #bc2c3d; font-size: 12px;}
 /* end of symptoms section */
 
 /* start of prevention section */
@@ -184,5 +185,6 @@ ul{list-style: none;padding-inline-start: 0;}
 .prevention .advices .info{margin-top: 25px;}
 .prevention .advices .info h3{font-size: 20px; color: #043353;}
 .prevention .advices .info p{margin-bottom: .5rem; line-height: 1.8em; color: #060606;}
+.prevention .advices .info h3::before{content: '\f00c';font-family: 'Font Awesome 5 Pro'; margin-right: 5px;color: green; font-size: 20px;}
 .prevention .icons p{color: #043353;}
 /* end of prevention section */
