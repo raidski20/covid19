@@ -22,7 +22,9 @@ $(function () {
                 $("#total_cases").html(data.cases);
                 $("#total_deaths").html(data.deaths);
                 $("#total_recovered").html(data.recovered);
-                $("#last_update").html('last updated: ' + data.updated + ".");
+                var date = new Date(data.updated)
+                console.log(date.toString())
+                $("#last_update").html('last updated: ' + date + ".");
             })
         },
         error: function (xhr, textStatus, err) {

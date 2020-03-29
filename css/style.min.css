@@ -2,7 +2,7 @@
     font-family: Alex;
     src: url(../fonts/Alex.ttf);
 }
-body {font-family: Alex;color: unset;}
+body {font-family: Alex;color: unset; height: 5000px}
 
 /* start of global */
 ul{list-style: none;padding-inline-start: 0;}
@@ -163,3 +163,14 @@ ul{list-style: none;padding-inline-start: 0;}
 .about-disease .spread .info p{cursor: none;margin-bottom: unset; color: #fff;}
 .about-disease .spread .info p:hover{text-decoration: none;}
 /* end of about disease section */
+
+/* start of prevention section */
+.prevention{padding: 40px 0; background-color: #faf8f0;}
+.prevention h2{font-size: 30px; margin-bottom: 20px; color: #6c757c;}
+.prevention p{margin-bottom: 1.5rem; line-height: 1.8em;}
+.prevention .icons{margin-top: 35px;}
+.prevention .icons img{background: #d3dde6; padding: 15px;margin-bottom: 10px;}
+.prevention .advices .info{margin-top: 25px;}
+.prevention .advices .info h3{font-size: 20px; color: #6c757d;}
+.prevention .advices .info p{margin-bottom: .5rem; line-height: 1.8em; color: #060606;}
+/* end of prevention section */
