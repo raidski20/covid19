@@ -203,9 +203,8 @@ ul{list-style: none;padding-inline-start: 0;}
 /* start of copyright */
 .copyright{border-top: 1px solid #fff; background: #08526d; padding: 20px;}
 .copyright ul,p{margin: 0;}
-.copyright p{color: #fff;}
+.copyright p, .copyright ul li a{color: #fff;}
 .copyright ul li{display: inline-block; margin-left: 20px; font-size: 20px;}
-.copyright ul li a{color: #fff;}
 /* end of copyright */
 
 /* start of scroll to top button */
