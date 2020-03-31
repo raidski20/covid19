@@ -32,18 +32,23 @@ $(function () {
 
     // getting data about covid cases and didplay it
     $.ajax({
-        url: 'https://corona.lmao.ninja/all',
+        url: 'https://thevirustracker.com/free-api?global=stats',
         dataType: 'json',
         cache: false,
         success: function (data, status) {
-            $.each(data, function(index) {
-                $("#total_cases").html(data.cases);
-                $("#total_deaths").html(data.deaths);
-                $("#total_recovered").html(data.recovered);
-                var date = new Date(data.updated)
-                console.log(date.toString())
-                $("#last_update").html('last updated: ' + date + ".");
-            })
+            $("#total_cases").html(data.results[0].total_cases);
+            $("#total_deaths, #fourthS").html(data.results[0].total_deaths);
+            $("#total_recovered, #thirdS").html(data.results[0].total_recovered);
+            $("#active_cases").html(data.results[0].total_active_cases);
+            // var date = new Date(data.updated);
+            // $("#last_update").html('last updated: ' + date + ".");
+            $("#closed-cases").html(data.results[0].total_deaths + data.results[0].total_recovered);
+            $("#recov-pers").html("("+ ((data.results[0].total_recovered * 100)/(data.results[0].total_deaths + data.results[0].total_recovered)).toFixed(1) + "%)");
+            $("#deathss-pers").html("("+ ((data.results[0].total_deaths * 100)/(data.results[0].total_deaths + data.results[0].total_recovered)).toFixed(1) + "%)");
+            $("#firstS").html(data.results[0].total_active_cases - data.results[0].total_serious_cases);
+            $("#secondS").html(data.results[0].total_serious_cases);
+            $("#good-cases").html("(" + (((data.results[0].total_active_cases - data.results[0].total_serious_cases) * 100) / (data.results[0].total_active_cases)).toFixed(1) + "%)");
+            $("#serious-cases").html("(" + ((data.results[0].total_serious_cases * 100) / data.results[0].total_active_cases).toFixed(1) + "%)");
         },
         error: function (xhr, textStatus, err) {
             console.log(xhr);
@@ -56,7 +61,7 @@ $(function () {
 
 // start of corona virus animation
 anime({
-    targets: '.navbar .navbar-brand img',
+    targets: '.navbar .navbar-brand img, .footer h2 img',
     loop: true,
     rotate: {
         value: 360,
