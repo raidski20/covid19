@@ -7,6 +7,7 @@
     <title>Corona Virus</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -30,6 +31,14 @@
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="about">about</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="symptoms">symptoms</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-value="prevention">prevention</a></li>
+                    <li class="nav-item">
+                        <div class="nav-link" id="dark">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                                <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                              </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -134,7 +143,7 @@
                     <p>Recovered cases</p>
                 </div>
             </div>
-            <!-- <p class="text-capitalize" id="last_update"></p> -->
+            <p class="text-capitalize" id="last_update"></p>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="card bg-light mb-3">
@@ -405,12 +414,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/anime.min.js"></script>
+    <script src="js/dark-mode-switch.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         $('.navbar-nav .nav-link').click(function () {
             $('.navbar-nav .nav-link').removeClass('active');
             $(this).addClass('active');
-        }); $('.second-button').on('click', function () {
+            $('#dark').removeClass('active');
+        });
+        $('.second-button').on('click', function () {
             $('.animated-icon2').toggleClass('open');
         });
     </script>

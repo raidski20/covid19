@@ -1,0 +1,33 @@
+[data-theme="dark"] {background-color: #060606 !important; color: #eee;}
+[data-theme="dark"] .bg-light {background-color: #333 !important;}
+[data-theme="dark"] .bg-white {background-color: #000 !important;}
+[data-theme="dark"] .bg-black {background-color: #eee !important;}
+
+[data-theme="dark"] .news, .symptoms {background: #060606;}
+[data-theme="dark"] .news .card-body {background: #060606;}
+[data-theme="dark"] .news .card .card-text {color: #fff;}
+[data-theme="dark"] .news .card .card-text .text-muted {color: #ddd !important;}
+[data-theme="dark"] .news .card .card-title, .news .card .card-link {color: #055890;}
+[data-theme="dark"] .news .card .card-link {color: #055890;}
+[data-theme="dark"] .news .card .card-link:hover {color: #055890;}
+
+[data-theme="dark"] .symptoms {background: #060606;}
+[data-theme="dark"] .symptoms .info{color: #fff;}
+[data-theme="dark"] .symptoms .info p{color: #055890;}
+
+[data-theme="dark"] .prevention{background-color: #060606; border-bottom: 1px solid #055890;}
+[data-theme="dark"] .prevention h2{color: #33e1ed;}
+[data-theme="dark"] .prevention .icons img{background: #d3dde6;}
+[data-theme="dark"] .prevention .advices .info h3{color: #055890;}
+[data-theme="dark"] .prevention .advices .info p{color: #fff;}
+[data-theme="dark"] .prevention .icons p{color: #055890;}
+
+[data-theme="dark"] .footer{background: #060606;}
+[data-theme="dark"] .footer .info h2{color: #055890;}
+[data-theme="dark"] .footer .info p,ul{color: #fff;}
+[data-theme="dark"] .footer .info ul li{color: #fff;}
+[data-theme="dark"] .footer .links ul a{color: #055890;}
+[data-theme="dark"] .footer .links h2{color: #055890;}
+[data-theme="dark"] .footer .links ul a:hover{color: #055890;}
+
+[data-theme="dark"] #scroll-Button:hover{color: #055890;}

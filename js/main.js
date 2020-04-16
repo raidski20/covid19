@@ -32,23 +32,23 @@ $(function () {
 
     // getting data about covid cases and didplay it
     $.ajax({
-        url: 'https://thevirustracker.com/free-api?global=stats',
+        url: 'https://corona.lmao.ninja/all',
         dataType: 'json',
         cache: false,
         success: function (data, status) {
-            $("#total_cases").html(data.results[0].total_cases);
-            $("#total_deaths, #fourthS").html(data.results[0].total_deaths);
-            $("#total_recovered, #thirdS").html(data.results[0].total_recovered);
-            $("#active_cases").html(data.results[0].total_active_cases);
-            // var date = new Date(data.updated);
-            // $("#last_update").html('last updated: ' + date + ".");
-            $("#closed-cases").html(data.results[0].total_deaths + data.results[0].total_recovered);
-            $("#recov-pers").html("("+ ((data.results[0].total_recovered * 100)/(data.results[0].total_deaths + data.results[0].total_recovered)).toFixed(1) + "%)");
-            $("#deathss-pers").html("("+ ((data.results[0].total_deaths * 100)/(data.results[0].total_deaths + data.results[0].total_recovered)).toFixed(1) + "%)");
-            $("#firstS").html(data.results[0].total_active_cases - data.results[0].total_serious_cases);
-            $("#secondS").html(data.results[0].total_serious_cases);
-            $("#good-cases").html("(" + (((data.results[0].total_active_cases - data.results[0].total_serious_cases) * 100) / (data.results[0].total_active_cases)).toFixed(1) + "%)");
-            $("#serious-cases").html("(" + ((data.results[0].total_serious_cases * 100) / data.results[0].total_active_cases).toFixed(1) + "%)");
+            $("#total_cases").html(data.cases);
+            $("#total_deaths, #fourthS").html(data.deaths);
+            $("#total_recovered, #thirdS").html(data.recovered);
+            $("#active_cases").html(data.active);
+            var date = new Date(data.updated);
+            $("#last_update").html('last updated: ' + date + ".");
+            $("#closed-cases").html(data.deaths + data.recovered);
+            $("#recov-pers").html("("+ ((data.recovered * 100)/(data.deaths + data.recovered)).toFixed(1) + "%)");
+            $("#deathss-pers").html("("+ ((data.deaths * 100)/(data.deaths + data.recovered)).toFixed(1) + "%)");
+            $("#firstS").html(data.active - data.critical);
+            $("#secondS").html(data.critical);
+            $("#good-cases").html("(" + (((data.active - data.critical) * 100) / (data.active)).toFixed(1) + "%)");
+            $("#serious-cases").html("(" + ((data.critical * 100) / data.active).toFixed(1) + "%)");
         },
         error: function (xhr, textStatus, err) {
             console.log(xhr);
